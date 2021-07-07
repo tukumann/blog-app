@@ -36,3 +36,42 @@
     transform: rotate(360deg);
   }
 }
+
+.post {
+  margin: 10px 20px 10px 20px;
+  display: block;
+  max-width: 200px;
+  height: 150px;
+  border-radius: 20px;
+  box-shadow: gainsboro 3px 3px 3px 3px;
+  background-color: #f5f7f8;
+}
+
+
+.post__toggler {
+  margin-left: 10%;
+  margin-top: 10px;
+  margin-right: 10px;
+  background-color: #f5f7f8;
+  color: #282c34;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 200;
+  border-radius: 10px;
+  border: 1px solid black;
+  display: inline-block;
+  padding: 2px 12px 2px 12px;
+  box-shadow: gainsboro 1px 1px 1px 1px;
+  text-align: left;
+}
+
+.post__title {
+  margin-top: 10px;
+  margin-left: 10px;
+  display: inline-block;
+  min-width: 10%;
+}
+
+.post__body {
+  margin: 10px 0 0 10px;
+  display: inline-block;
+}
