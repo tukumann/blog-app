@@ -37,8 +37,14 @@
   }
 }
 
+
+.posts__title {
+ margin: 0 auto;
+ text-align: center;
+}
+
 .post {
-  margin: 10px 20px 10px 20px;
+  margin: 10px auto 10px auto;
   display: block;
   max-width: 200px;
   height: 150px;
