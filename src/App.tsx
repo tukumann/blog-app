@@ -5,21 +5,33 @@ const App = () => {
     
     let [posts, setPosts] = useState([
       {
-        name: "First One",
+        name: "The ____ of basic grains varied among countries. (produce)",
         isOpen: false,
-        description: "Some content #1",
+        description: "production",
         likes: 0
       },
       {
-        name: "Second One",
+        name: "My first ____ was that he was a tactful politician. (impress)",
         isOpen: false,
-        description: "Some content #2",
+        description: "impression",
         likes: 0
       },
       {
-        name: "Third One",
+        name: "Another factor is the choice of ____. (occupy)",
         isOpen: false,
-        description: "Some content #3",
+        description: "occupations",
+        likes: 0
+      },
+      {
+        name: "This course covered both skill training and managerial ____. (know)",
+        isOpen: false,
+        description: "knowledge",
+        likes: 0
+      },
+      {
+        name: "Upon graduation, your ____ will make you highly sought after by Australian and international employers. (qualify)",
+        isOpen: false,
+        description: "qualification",
         likes: 0
       }
     ]);
@@ -54,7 +66,7 @@ const App = () => {
 
     return (
     <>
-      <div className='posts__title'>{"Количество постов: " + posts.length}</div>
+      <div className='posts__title'>{"Количество оставшихся вопросов: " + posts.length}</div>
       {posts.map((post, i) => (
       <div className="post" key={ post.name }>
         <button className="post__remover" onClick={() => postRemover(i)}>X</button>
@@ -65,7 +77,7 @@ const App = () => {
           <span>{post.likes}</span>
         </div>
         {post.isOpen ? (
-        <div className="post__body">{ post.description }</div>
+        <div className="post__body"><strong>{ post.description }</strong></div>
         ) : null}
       </div>
       ))}
