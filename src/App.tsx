@@ -25,37 +25,11 @@ const App = () => {
     ]);
 
 
-    // const postsChanged = [
-    //   {
-    //     name: "First One",
-    //     isOpen: true,
-    //     description: "Some content #1"
-    //   },
-    //   {
-    //     name: "Second One",
-    //     isOpen: false,
-    //     description: "Some content #2"
-    //   },
-    //   {
-    //     name: "Third One",
-    //     isOpen: false,
-    //     description: "Some content #3"
-    //   }
-    // ]
-
-    // const postInfo = {
-    //   title: "My Post Title",
-    //   description: "Some info about this post"
-    // };
 
     const toggleHandler = (name: string) => {
-      // posts[0].isOpen = !posts[0].isOpen;
-      // setIsOpen(isOpen);
-      // console.log(isOpen);
       let postsChanged: any = [...posts];
       const el = postsChanged.find((el: any) => el.name === name);
       el.isOpen = !el.isOpen;
-      console.log(el.isOpen);
       setPosts(postsChanged);
     };
 
@@ -63,7 +37,12 @@ const App = () => {
       let postsChanged: any = [...posts];
       const el = postsChanged.find((el: any) => el.name === name);
       el.likes++;
-      console.log(el.isOpen);
+      setPosts(postsChanged);
+    };
+
+    const postRemover = (i: number) => {
+      let postsChanged: any = [...posts];
+      postsChanged.splice(i, 1); 
       setPosts(postsChanged);
     };
 
@@ -75,8 +54,10 @@ const App = () => {
 
     return (
     <>
-      {posts.map((post) => (
+      {"Количество постов: " + posts.length}
+      {posts.map((post, i) => (
       <div className="post" key={ post.name }>
+        <button className="post__remover" onClick={() => postRemover(i)}>X</button>
         <div className="post__header">
           <span className="post__title">{ post.name }</span>
           <button className="post__toggler" onClick={() => toggleHandler(post.name)}>Toggle</button>
