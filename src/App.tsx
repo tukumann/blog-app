@@ -54,7 +54,7 @@ const App = () => {
 
     return (
     <>
-      <div className='posts__title'>{"КЛОН ГОТОВО: " + posts.length}</div>
+      <div className='posts__title'>{"Количество постов: " + posts.length}</div>
       {posts.map((post, i) => (
       <div className="post" key={ post.name }>
         <button className="post__remover" onClick={() => postRemover(i)}>X</button>
