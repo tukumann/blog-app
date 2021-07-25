@@ -3,38 +3,38 @@ import './App.css';
 
 const App = () => {
     
-    let [posts, setPosts] = useState([
-      {
-        name: "The ____ of basic grains varied among countries. (produce)",
-        isOpen: false,
-        description: "production",
-        likes: 0
-      },
-      {
-        name: "My first ____ was that he was a tactful politician. (impress)",
-        isOpen: false,
-        description: "impression",
-        likes: 0
-      },
-      {
-        name: "Another factor is the choice of ____. (occupy)",
-        isOpen: false,
-        description: "occupations",
-        likes: 0
-      },
-      {
-        name: "This course covered both skill training and managerial ____. (know)",
-        isOpen: false,
-        description: "knowledge",
-        likes: 0
-      },
-      {
-        name: "Upon graduation, your ____ will make you highly sought after by Australian and international employers. (qualify)",
-        isOpen: false,
-        description: "qualification",
-        likes: 0
-      }
-    ]);
+  let [posts, setPosts] = useState([
+    {
+      name: "The ____ of basic grains varied among countries. (produce)",
+      isOpen: false,
+      description: "production",
+      likes: 0
+    },
+    {
+      name: "My first ____ was that he was a tactful politician. (impress)",
+      isOpen: false,
+      description: "impression",
+      likes: 0
+    },
+    {
+      name: "Another factor is the choice of ____. (occupy)",
+      isOpen: false,
+      description: "occupations",
+      likes: 0
+    },
+    {
+      name: "This course covered both skill training and managerial ____. (know)",
+      isOpen: false,
+      description: "knowledge",
+      likes: 0
+    },
+    {
+      name: "Upon graduation, your ____ will make you highly sought after by Australian and international employers. (qualify)",
+      isOpen: false,
+      description: "qualification",
+      likes: 0
+    }
+  ]);
 
 
 
